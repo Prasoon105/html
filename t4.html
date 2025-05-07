@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Earth Co.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .bg-green {
+      background-color: #2d4b21;
+    }
+
+    .navbar-brand {
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: url('image/green-earth-collective-rewards-1.jpg') center center / cover no-repeat;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      z-index: 1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .text-green {
+      color: #2d4b21;
+    }
+
+    .btn-light {
+      border-radius: 30px;
+      padding: 10px 30px;
+    }
+
+    h1 {
+      font-weight: 800;
+    }
+
+    h5 {
+      font-weight: 700;
+    }
+
+    .nav-link.active {
+      text-decoration: underline;
+    }
+
+    .nav-link {
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green px-4">
+    <a class="navbar-brand fw-bold text-white" href="#">Green<br>Earth Co.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">SHOP</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Locations</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">Delivery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Rewards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Deals & Events</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">SHOP, EARN, SAVE!</h1>
+      <div class="row mt-4 justify-content-center">
+        <div class="col-md-5 mb-3">
+          <h5>Highland Park</h5>
+          <p>(323) 349 – 0949<br>Monday–Friday 8am–10pm<br>Saturday–Sunday 9am–10pm</p>
+          <a href="#" class="btn btn-light text-green fw-bold">Shop Now</a>
+        </div>
+        <div class="col-md-5 mb-3">
+          <h5>Granada Hills</h5>
+          <p>(818) 488–9119<br>Monday–Friday 8am–10pm<br>Saturday–Sunday 9am–10pm</p>
+          <a href="#" class="btn btn-light text-green fw-bold">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
